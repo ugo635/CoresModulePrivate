@@ -1,0 +1,14 @@
+
+[general]
+
+	[general.settings]
+		enable_cores_module = true
+
+[tracker]
+
+	[tracker.settings]
+		line_width = 4
+		waipoint_tracer = true
+		waipoint_tracer_color = "255,255,255,255"
+		line_color = "255,0,255,255"
+
