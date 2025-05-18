@@ -43,7 +43,7 @@ function updateTracer(playerName) {
     let player = World.getPlayerByName(playerName);
     if (!player) {
         trackedPlayers = trackedPlayers.filter(p => p.name !== playerName);
-        ChatLib.chat("&4[Cm Tracker] &cEnable to track anymore" + playerName)
+        ChatLib.chat("&4[Cm Tracker] &cEnable to track &a" + playerName + " &canymore")
         return;
     }
 

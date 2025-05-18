@@ -78,19 +78,19 @@ class cmSettingsData {
     wpTrue = false;
     @ColorProperty({
         name: "Waipoint Tracer Color",
-        description: "Choose the color for the waypoint tracer",
+        description: "Choose the color for the waypoint tracer (default is ffffffff)",
         category: "Tracker",
         subcategory: "Settings",
     })
-    wpColor = new Color(0, 0, 0, 1);
+    wpColor = new Color(1, 1, 1, 1);
 
     @ColorProperty({
         name: "Line Color",
-        description: "The color of the line for &a/trackPlayer playerName",
+        description: "The color of the line for &a/trackPlayer playerName (default is 00ffffff)",
         category: "Tracker",
         subcategory: "Settings",
     })
-    lineColor = new Color(0, 0, 0, 1);
+    lineColor = new Color(0, 1, 1, 1);
 }
 
 export default new cmSettingsData();

@@ -1,5 +1,5 @@
 import pSettings from "./settings";
-import "./features/Tracker.js";
+import "./features/playerTracker.js";
 
 register("gameLoad", () => {
     ChatLib.chat("&c&l[Cores Module Private] &r&7Module Loaded");
@@ -8,6 +8,10 @@ register("gameLoad", () => {
 const commands = [
     {cmd: "cmp", description: "Open the settings", ph: ""},
     {cmd: "cmp help", description: "Show this message", ph: ""},
+    {cmd: "track <player>", description: "Tracks a player loc (see the settings for customability), running it again will remove the first player and tracks the 2nd one", ph: `track ${Player.getName()}`},
+    {cmd: "track add <player> (multiple possible)", description: "Tracks an another player loc", ph: `track ${Player.getName()}`},
+    {cmd: "untrack", description: "Untracks all player", ph: `track ${Player.getName()}`},
+    {cmd: "untrack <player>", description: "Untracks a player loc", ph: `untrack ${Player.getName()}`}
 ];
 
 register("command", (args1, ...args) => {
@@ -36,7 +40,7 @@ register("command", (args1, ...args) => {
                 ChatLib.chat(ChatLib.getChatBreak("&b-"));
                 break;
             default:
-                ChatLib.chat("&6[Cmp] &eUnknown command. Use /cm help for a list of commands")
+                ChatLib.chat("&6[Cmp] &eUnknown command. Use /cmp help for a list of commands")
                 break;
         }
     }

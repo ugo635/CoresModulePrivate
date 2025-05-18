@@ -8,7 +8,7 @@
 
 	[tracker.settings]
 		line_width = 4
-		waipoint_tracer = false
-		waipoint_tracer_color = "255,0,0,0"
-		line_color = "255,0,0,0"
+		waipoint_tracer = true
+		waipoint_tracer_color = "255,255,255,255"
+		line_color = "255,0,255,255"
 

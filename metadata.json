@@ -2,7 +2,7 @@
     "name": "CoresModulePrivate",
     "creator": "JudgementCorePls | ugo635",
     "description": "We love Doc <3",
-    "version": "1.32.0",
+    "version": "1.0.0",
     "entry": "index.js",
     "requires": [
         "FileUtilities",
