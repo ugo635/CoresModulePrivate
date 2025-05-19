@@ -1,9 +1,7 @@
 import pSettings from "./settings";
 import "./features/playerTracker.js";
 
-register("gameLoad", () => {
-    ChatLib.chat("&c&l[Cores Module Private] &r&7Module Loaded");
-});
+register("gameLoad", () => ChatLib.chat("&c&l[Cores Module Private] &r&7Module Loaded"));
 
 const commands = [
     {cmd: "cmp", description: "Open the settings", ph: ""},

@@ -109,9 +109,7 @@ function renderWaypoint(waypoints) {
 
 
 register("renderWorld", () => {
-    for (let player of trackedPlayers) {
-        updateTracer(player.name);
-    }
+    for (let player of trackedPlayers) updateTracer(player.name);
 });
 
 register("command", (...args) => {
